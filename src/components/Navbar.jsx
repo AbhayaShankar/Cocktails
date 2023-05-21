@@ -12,10 +12,14 @@ export default function Navbar() {
           </Link>
           <ul className="nav-links">
             <li>
-              <Link to="/">Home</Link>
+              <Link style={{ color: "#7cb354" }} to="/">
+                Home
+              </Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link style={{ color: "#fcfcfc", fontWeight: 400 }} to="/about">
+                About
+              </Link>
             </li>
           </ul>
         </div>

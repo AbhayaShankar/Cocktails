@@ -23,7 +23,9 @@ export default function SearchForm() {
     <section className="section search">
       <form className="search-form" onSubmit={handleSubmit}>
         <div className="form-control">
-          <label htmlFor="name">Search your Fav Cocktail</label>
+          <label style={{ color: "#5c8e39" }} htmlFor="name">
+            Search your Fav Cocktail
+          </label>
           <input
             type="text"
             id="name"

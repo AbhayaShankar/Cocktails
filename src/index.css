@@ -4,7 +4,8 @@ Variables
 ======
 */
 :root {
-  --primaryLightColor: #e6a5a5;
+  --primaryLightColor: #7cb354;
+  --primaryLightColor2: #5c8e39;
   --primaryColor: #d0e3c2;
   --primaryDarkColor: #c02c03;
   --mainWhite: #4d4d4d;
@@ -79,7 +80,7 @@ Buttons
 .btn-primary {
   text-transform: uppercase;
   letter-spacing: var(--mainSpacing);
-  color: var(--primaryColor);
+  color: var(--primaryLightColor2);
   border: 2px solid var(--primaryColor);
   padding: 0.45rem 0.8rem;
   display: inline-block;
@@ -104,12 +105,12 @@ Buttons
   color: var(--primaryColor);
 }
 .btn-primary {
-  background: var(--primaryColor);
-  color: var(--mainWhite);
+  background: var(--primaryLightColor);
+  color: var(--primaryColor);
   border-color: transparent;
 }
 .btn-primary:hover {
-  background: var(--primaryLightColor);
+  background: var(--primaryLightColor2);
   color: var(--primaryColor);
 }
 .btn-block {
@@ -123,7 +124,7 @@ Buttons
   padding: 0.25rem 0.4rem;
 }
 .btn-details:hover {
-  background: var(--primaryLightColor);
+  background: var(--primaryLightColor2);
   border-color: var(--primaryLightColor);
 }
 /* 
@@ -252,13 +253,14 @@ Cocktail
 */
 
 .cocktail {
-  background: var(--mainWhite);
+  background: var(--primaryColor);
   margin-bottom: 2rem;
   box-shadow: var(--lightShadow);
   transition: var(--mainTransition);
   display: grid;
   grid-template-rows: auto 1fr;
   border-radius: var(--mainBorderRadius);
+  color: #252627;
 }
 .cocktail:hover {
   box-shadow: var(--darkShadow);
@@ -303,6 +305,7 @@ Form
   text-transform: capitalize;
   border-radius: var(--mainBorderRadius);
   box-shadow: var(--lightShadow);
+  background-color: var(--primaryColor);
 }
 
 .form-control label {
@@ -316,10 +319,12 @@ Form
   width: 100%;
   border: none;
   border-color: transparent;
-  background: var(--mainBackground);
+  background: #99ce72;
   border-radius: var(--mainBorderRadius);
   padding: 0.5rem;
   font-size: 1.2rem;
+  outline: none;
+  letter-spacing: 0.8px;
 }
 /* 
 ====== 
@@ -352,6 +357,7 @@ Cocktail
   padding: 0.25rem 0.5rem;
   border-radius: var(--mainBorderRadius);
   color: var(--primaryColor);
+  font-weight: 500;
 }
 .drink-info {
   padding-top: 2rem;
